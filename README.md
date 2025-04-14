@@ -25,6 +25,14 @@ hexterika-website/
 └── README.md             # Project overview and setup instructions
 ```
 
+CSS
+
+HTML File  CSS to Link
+index.html  base.css, index.css
+cyberlab.html  base.css, cyberlab.css
+designer.html  base.css, designer.css
+marketing.html  base.css, marketing.css
+
 ## Service Pages
 
 **Landing Page (`index.html`):** The homepage of the website that serves as an introduction to Hexterika, linking visitors to the other service pages.
