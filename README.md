@@ -13,6 +13,7 @@ hexterika-website/
 ├── cyberlab.html            # Hexterika cyberlab service page
 ├── designer.html            # Hexterika designer service page
 ├── marketing.html           # Hexterika marketing service page
+├── contact.html             # Contact Me page
 │
 ├── assets/                  # Contains all assets like images, CSS, JS files
 │   ├── css/                 # CSS stylesheets for the website
@@ -20,7 +21,8 @@ hexterika-website/
 |   |   ├── index.css        #
 |   |   ├── cyberlab.css     #
 |   |   ├── designer.css     #
-|   |   └── marketing.css    #
+|   |   ├── marketing.css    #
+|   |   └── contact.css      #
 │   ├── images/              # Folder for all images used in the website
 │   │   ├── cyberlab/        # Images related to cyberlab service
 │   │   ├── designer/        # Images related to designer service
