@@ -9,20 +9,25 @@ The project is organized as follows:
 ``` markdown
 hexterika-website/
 │
-├── index.html            # Landing page
-├── cyberlab.html         # Hexterika cyberlab service page
-├── designer.html         # Hexterika designer service page
-├── marketing.html        # Hexterika marketing service page
+├── index.html               # Landing page
+├── cyberlab.html            # Hexterika cyberlab service page
+├── designer.html            # Hexterika designer service page
+├── marketing.html           # Hexterika marketing service page
 │
-├── assets/               # Contains all assets like images, CSS, JS files
-│   ├── css/              # CSS stylesheets for the website
-│   ├── images/           # Folder for all images used in the website
-│   │   ├── cyberlab/     # Images related to cyberlab service
-│   │   ├── designer/     # Images related to designer service
-│   │   └── marketing/    # Images related to marketing service
-│   └── js/               # JavaScript files
+├── assets/                  # Contains all assets like images, CSS, JS files
+│   ├── css/                 # CSS stylesheets for the website
+|   |   ├── base.css         #
+|   |   ├── index.css        #
+|   |   ├── cyberlab.css     #
+|   |   ├── designer.css     #
+|   |   └── marketing.css    #
+│   ├── images/              # Folder for all images used in the website
+│   │   ├── cyberlab/        # Images related to cyberlab service
+│   │   ├── designer/        # Images related to designer service
+│   │   └── marketing/       # Images related to marketing service
+│   └── js/                  # JavaScript files
 │
-└── README.md             # Project overview and setup instructions
+└── README.md                # Project overview and setup instructions
 ```
 
 CSS
