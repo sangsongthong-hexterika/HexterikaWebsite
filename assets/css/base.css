@@ -1,0 +1,89 @@
+/* 1. CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* 2. Base Font Settings */
+  html {
+    font-family: 'Arial', sans-serif; /* You can replace this later */
+    font-size: 16px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  /* 3. Body Defaults */
+  body {
+    /* Background & text color placeholders */
+    background-color: #db2e2e; /* Placeholder */
+    color: #000000; /* Placeholder */
+  }
+  
+  /* 4. Headings & Paragraphs */
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+  h2 {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  h3 {
+    font-size: 1.75rem;
+    font-weight: 600;
+  }
+  h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  h5 {
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+  h6 {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  p {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+  }
+  
+  /* 5. Links */
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* 6. Buttons */
+  button {
+    font: inherit;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* 7. Images and Media */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* 8. Forms (Optional, minimal) */
+  input, textarea {
+    font: inherit;
+  }
+
+  /* 9. Form Elements (optional for now) */
+    /* Basic font styling for input, textarea, etc. */
+
+  /* 10. Utility Classes (optional, can add later) */
+    /* For common text alignment, spacing, etc. */
+
+  /* 11. Layout (Flexbox/Grid) */
