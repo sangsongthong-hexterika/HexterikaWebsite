@@ -108,6 +108,7 @@
     grid-column-start: 2;
     grid-column-end: 12;
     justify-content: center;
+    padding-block: 1rem;
   }
 
   main {
@@ -133,17 +134,18 @@
   }
   
   main a {
-    text-decoration: none;
+    text-decoration: underline;
     color: inherit; /* or pick your desired color */
   }
   
   header nav ul {
+    display: flex; /* Make the inside of the header nav bar unordered list display in 1 line*/
+    gap: 1rem;
     list-style: none;
-    padding: 0;
-    margin: 0;
   }
   
   header nav a {
-    text-decoration: none;
+    text-decoration: underline;
     color: inherit; /* or pick your desired color */
   }
+  
