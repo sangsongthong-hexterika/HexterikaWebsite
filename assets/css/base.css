@@ -15,12 +15,20 @@
   }
   
   /* 3. Body Defaults */
+
   body {
     /* Background & text color placeholders */
     background-color: #e6ece1; /* Placeholder */
     color: #000000; /* Placeholder */
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);  /* 12 equal columns */
+    /* grid-template-rows: auto 1fr auto; */ /* Header, content, footer */
+    gap: 1rem;  /* Optional: space between columns */
+    min-height: 100vh; /* Ensure body covers the full height of the viewport */
+    grid-column-start: 2;
+    grid-column-end: 12;
   }
-  
+
   /* 4. Headings & Paragraphs */
   h1 {
     font-size: 2.5rem;
@@ -94,3 +102,25 @@
     /* For common text alignment, spacing, etc. */
 
   /* 11. Layout (Flexbox/Grid) */
+  
+  header {
+    display: grid;
+    /* grid-template-columns: repeat(12, 1fr); */
+    grid-row: 1;
+    grid-column-start: 2;
+    grid-column-end: 12;
+  }
+
+  main {
+    display: grid;
+    grid-row-start: 2;
+    grid-column-start: 2;
+    grid-column-end: 12;
+  }
+
+  footer {
+    display: grid;
+    grid-row: 3;
+    grid-column-start: 2;
+    grid-column-end: 12;
+  }
