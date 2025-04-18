@@ -22,7 +22,7 @@
     color: #000000; /* Placeholder */
     display: grid;
     grid-template-columns: repeat(12, 1fr);  /* 12 equal columns */
-    /* grid-template-rows: auto 1fr auto; */ /* Header, content, footer */
+    /* This is what make the header, main, and footer able to display in 12 columns grids. */ 
     gap: 1rem;  /* Optional: space between columns */
     min-height: 100vh; /* Ensure body covers the full height of the viewport */
   }
@@ -115,6 +115,7 @@
     grid-row-start: 2;
     grid-column-start: 2;
     grid-column-end: 12;
+    text-align: center;
   }
 
   footer {
@@ -123,4 +124,26 @@
     grid-column-start: 2;
     grid-column-end: 12;
     justify-content: center;
+  }
+
+  main ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  main a {
+    text-decoration: none;
+    color: inherit; /* or pick your desired color */
+  }
+  
+  header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  header nav a {
+    text-decoration: none;
+    color: inherit; /* or pick your desired color */
   }
