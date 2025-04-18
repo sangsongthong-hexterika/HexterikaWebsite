@@ -1,0 +1,32 @@
+/* === 1. Section Backgrounds for Cyberlab === */
+.bg-1 {
+    background: linear-gradient(135deg, #0a0f1a, #1b263b); /* Dark blue/black gradient */
+  }
+  
+  .bg-2 {
+    background: linear-gradient(135deg, #1b263b, #2c3e50); /* Blue to darker blue gradient */
+  }
+  
+  /* === 2. Theme Colors (Red/Blue/Black) === */
+  body {
+    background-color: #0a0f1a; /* Dark background for Cyberlab */
+    color: #f2f2f2; /* Light text for contrast */
+  }
+  
+  h1, h2 {
+    color: #db2e2e; /* Red for headers */
+  }
+  
+  a {
+    color: inherit; /* Inherit text color from parent */
+    transition: color 0.3s ease; /* Smooth transition for links */
+  }
+  
+  a:hover {
+    color: #ff4d4d; /* Lighter red on hover */
+  }
+  
+  a:visited {
+    color: #9b59b6; /* Purple for visited links */
+  }
+  
