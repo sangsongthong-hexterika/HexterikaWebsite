@@ -17,12 +17,12 @@ hexterika-website/
 │
 ├── assets/                  # Contains all assets like images, CSS, JS files
 │   ├── css/                 # CSS stylesheets for the website
-|   |   ├── base.css         #
-|   |   ├── index.css        #
-|   |   ├── cyberlab.css     #
-|   |   ├── designer.css     #
-|   |   ├── marketing.css    #
-|   |   └── contact.css      #
+|   |   ├── base.css         # Every HTML files has this.
+|   |   ├── index.css        # For the Landing Page
+|   |   ├── cyberlab.css     # For Hexterika Cyberlab page
+|   |   ├── designer.css     # For Hexterika Designer page
+|   |   ├── marketing.css    # For Hexterika Marketing page
+|   |   └── contact.css      # For Contact pager
 │   ├── images/              # Folder for all images used in the website
 │   │   ├── cyberlab/        # Images related to cyberlab service
 │   │   ├── designer/        # Images related to designer service
@@ -32,13 +32,14 @@ hexterika-website/
 └── README.md                # Project overview and setup instructions
 ```
 
-CSS
+### CSS
 
-HTML File  CSS to Link
-index.html  base.css, index.css
-cyberlab.html  base.css, cyberlab.css
-designer.html  base.css, designer.css
-marketing.html  base.css, marketing.css
+| HTML Files    | Related CSS             |
+| :-----------: | :---------------------: |
+|index.html     | base.css, index.css     |
+|cyberlab.html  | base.css, cyberlab.css  |
+|designer.html  | base.css, designer.css  |
+|marketing.html | base.css, marketing.css |
 
 ## Service Pages
 
