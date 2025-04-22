@@ -1,10 +1,18 @@
 /* === 1. Section Backgrounds for Cyberlab === */
-.bg-1 {
+  .bg-1 {
     background: linear-gradient(135deg, #0a0f1a, #1b263b); /* Dark blue/black gradient */
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
   
   .bg-2 {
     background: linear-gradient(135deg, #1b263b, #2c3e50); /* Blue to darker blue gradient */
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
   
   /* === 2. Theme Colors (Red/Blue/Black) === */
