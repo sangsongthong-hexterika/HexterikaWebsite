@@ -18,7 +18,7 @@
 
   body {
     /* Background & text color placeholders */
-    background-color: #e6ece1; /* Placeholder */
+    background-color: #E5ECE9; /* Placeholder */
     color: #000000; /* Placeholder */
     display: grid;
     grid-template-columns: repeat(12, 1fr);  /* 12 equal columns */

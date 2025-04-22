@@ -5,6 +5,10 @@
     padding-bottom: 2rem;
     padding-left: 2rem;
     padding-right: 2rem;
+    border-bottom-left-radius: 7%;
+    border-bottom-right-radius: 7%;
+    border-top-right-radius: 7%;
+    border-top-left-radius: 7%;
   }
   
   .bg-2 {
@@ -13,6 +17,10 @@
     padding-bottom: 2rem;
     padding-left: 2rem;
     padding-right: 2rem;
+    border-bottom-left-radius: 7%;
+    border-bottom-right-radius: 7%;
+    border-top-right-radius: 7%;
+    border-top-left-radius: 7%;
   }
   
   /* === 2. Theme Colors (Red/Blue/Black) === */
