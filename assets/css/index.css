@@ -37,4 +37,43 @@
   a:visited {
     color: #9b59b6; /* Purple for visited links */
   }
+
+  /* After the revamp. */
+  .button-cta {
+    display: inline-block; /* Allows padding, margin, etc. */
+    background-color: greenyellow; /* Example: A nice blue */
+    color: rgb(11, 1, 1); /* Example: White text */
+    padding: 10px 20px;
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Slightly rounded corners */
+    margin-top: 20px; /* Space above the button */
+    font-weight: bold;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+  }
+
+  .button-cta:hover {
+    background-color: red; /* Darker blue on hover */
+  }
+  
+  .text-link {
+    color: #007bff; /* A blue that stands out, or your brand accent color */
+    text-decoration: underline; /* Standard underline */
+    font-weight: normal; /* Keep it regular weight, or bold if preferred */
+    /* Add hover effects for good UX */
+    transition: color 0.3s ease, text-decoration-color 0.3s ease;
+  }
+
+  .text-link:hover {
+    color: #0056b3; /* Darker shade on hover */
+    text-decoration: underline; /* Ensure underline remains or changes color */
+  }
+
+  .key-statement {
+    /* These properties will be in addition to the default bolding from <strong> */
+    color: #E74C3C; /* Example: A strong red or an accent color */
+    /* font-size: 1.05em; */ /* Optionally slightly larger than surrounding text */
+    /* background-color: #FFF2CC; */ /* Optional: a subtle highlight background */
+    /* padding: 2px 5px; */ /* Optional: padding if using background-color */
+    /* border-radius: 3px; */ /* Optional: rounded corners for background highlight */
+  }
   
