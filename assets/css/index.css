@@ -77,3 +77,8 @@
     /* border-radius: 3px; */ /* Optional: rounded corners for background highlight */
   }
   
+  .headshot {
+    width: 20%;
+    height: auto;
+    border-radius: 20%;
+  }
