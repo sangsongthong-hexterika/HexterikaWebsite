@@ -1,43 +1,20 @@
 /* === 1. Section Backgrounds for Cyberlab === */
-  .bg-1 {
-    background: linear-gradient(135deg, #0a0f1a, #1b263b); /* Dark blue/black gradient */
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    border-bottom-left-radius: 7%;
-    border-bottom-right-radius: 7%;
-    border-top-right-radius: 7%;
-    border-top-left-radius: 7%;
+  .hero {
+    background: #482860; /* Dark blue/black gradient */
   }
   
-  .bg-2 {
-    background: linear-gradient(135deg, #1b263b, #2c3e50); /* Blue to darker blue gradient */
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    border-bottom-left-radius: 7%;
-    border-bottom-right-radius: 7%;
-    border-top-right-radius: 7%;
-    border-top-left-radius: 7%;
+  .job {
+    background: #D35C64;
+  }
+
+  .freelance {
+    background: #347092;
   }
   
-  /* === 2. Theme Colors (Red/Blue/Black) === */
-  body {
-    background-color: #0a0f1a; /* Dark background for Cyberlab */
-    color: #f2f2f2; /* Light text for contrast */
+  .closing-end {
+    background: #252868;
   }
-  
-  h1, h2 {
-    color: #db2e2e; /* Red for headers */
-  }
-  
-  a {
-    color: inherit; /* Inherit text color from parent */
-    transition: color 0.3s ease; /* Smooth transition for links */
-  }
-  
+
   a:hover {
     color: #ff4d4d; /* Lighter red on hover */
   }
