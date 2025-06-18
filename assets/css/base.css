@@ -84,7 +84,7 @@
   
   /* 7. Images and Media */
   img {
-    max-width: 100%;
+    max-width: 50%;
     height: auto;
   }
   
@@ -149,3 +149,12 @@
     color: inherit; /* or pick your desired color */
   }
   
+  .header {
+    background-color: beige;
+    color: black;
+  }
+
+  .footer {
+    background-color: beige;
+    color: black;
+  }
