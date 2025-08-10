@@ -1,11 +1,23 @@
+body {
+    background-color: #0a0f1a; /* Dark background for Cyberlab */
+    color: #f2f2f2; /* Light text for contrast */
+}
+
 main {
     text-align: left;
 }
 
 main h1 {
     text-align: center;
+    color: #39FF14; /* Neon Green */
 }
 
 main h2 {
     text-align: center;
+    color: #00FFFF; /* Electric Blue */
+}
+
+main h3 {
+    text-align: center;
+    color: #FFD700; /* Neon Yellow */
 }

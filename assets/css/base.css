@@ -18,7 +18,7 @@
 
   body {
     /* Background & text color placeholders */
-    background-color: #E5ECE9; /* Placeholder */
+    background-color: #03D8F3; /* Placeholder */
     color: #000000; /* Placeholder */
     display: grid;
     grid-template-columns: repeat(12, 1fr);  /* 12 equal columns */
@@ -29,11 +29,11 @@
 
   /* 4. Headings & Paragraphs */
   h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: 700;
   }
   h2 {
-    font-size: 2rem;
+    font-size: 2.25rem;
     font-weight: 600;
   }
   h3 {
@@ -69,10 +69,6 @@
     color: #ff9900;            /* Hover color */
     text-decoration: underline;
   }
-  
-  a:visited {
-    color: #800080;            /* Visited link color */
-  }  
   
   /* 6. Buttons */
   button {
