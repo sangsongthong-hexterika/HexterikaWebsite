@@ -7,7 +7,7 @@ body {
   .button-cta {
     display: inline-block; /* Allows padding, margin, etc. */
     background-color: #39FF14; /* Example: A nice blue */
-    color: #FF00FF; /* Example: White text */
+    color: black; /* Example: White text */
     padding: 10px 20px;
     text-decoration: none; /* Remove underline */
     border-radius: 5px; /* Slightly rounded corners */
