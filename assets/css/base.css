@@ -18,8 +18,8 @@
 
   body {
     /* Background & text color placeholders */
-    background-color: #03D8F3; /* Placeholder */
-    color: #000000; /* Placeholder */
+    background-color: black; /* Placeholder */
+    color: #f2f2f2; /* Placeholder */
     display: grid;
     grid-template-columns: repeat(12, 1fr);  /* 12 equal columns */
     /* This is what make the header, main, and footer able to display in 12 columns grids. */ 
@@ -146,8 +146,8 @@
   }
   
   .header {
-    background-color: beige;
-    color: black;
+    background-color: blue;
+    color: bisque;
   }
 
   .footer {

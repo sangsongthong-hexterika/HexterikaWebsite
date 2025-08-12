@@ -16,7 +16,7 @@ body {
     transition: background-color 0.3s ease; /* Smooth hover effect */
 }
 
-  .button-cta:hover {
+.button-cta:hover {
     background-color: red; /* Darker blue on hover */
 }
 
