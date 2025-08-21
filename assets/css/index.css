@@ -16,13 +16,13 @@
   }*/
   
   /* === 2. Theme Colors (Red/Blue/Black) === */
-  body {
-    background-color: #0a0f1a; /* Dark background for Cyberlab */
-    color: #f2f2f2; /* Light text for contrast */
-  }
   
-  h1, h2, h3 {
+  h1 {
     color: #39FF14 /* Neon Green for headers */
+  }
+
+  header h4 {
+    color: bisque;
   }
   
   a {
@@ -43,7 +43,7 @@
   .button-cta {
     display: inline-block; /* Allows padding, margin, etc. */
     background-color: #39FF14; /* Example: A nice blue */
-    color: #FF00FF; /* Example: White text */
+    color: black; /* Example: White text */
     padding: 10px 20px;
     text-decoration: none; /* Remove underline */
     border-radius: 5px; /* Slightly rounded corners */
@@ -56,30 +56,13 @@
     background-color: red; /* Darker blue on hover */
   }
   
-  .text-link {
-    color: #007bff; /* A blue that stands out, or your brand accent color */
-    text-decoration: underline; /* Standard underline */
-    font-weight: normal; /* Keep it regular weight, or bold if preferred */
-    /* Add hover effects for good UX */
-    transition: color 0.3s ease, text-decoration-color 0.3s ease;
-  }
-
-  .text-link:hover {
-    color: #0056b3; /* Darker shade on hover */
-    text-decoration: underline; /* Ensure underline remains or changes color */
-  }
-
-  .key-statement {
-    /* These properties will be in addition to the default bolding from <strong> */
-    color: #E74C3C; /* Example: A strong red or an accent color */
-    /* font-size: 1.05em; */ /* Optionally slightly larger than surrounding text */
-    /* background-color: #FFF2CC; */ /* Optional: a subtle highlight background */
-    /* padding: 2px 5px; */ /* Optional: padding if using background-color */
-    /* border-radius: 3px; */ /* Optional: rounded corners for background highlight */
-  }
-  
   .headshot {
     width: 20%;
     height: auto;
     border-radius: 20%;
+  }
+
+  .header {
+    background-color: blue;
+    color: bisque;
   }
