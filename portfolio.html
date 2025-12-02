@@ -103,64 +103,91 @@
 
         <section>
             <h2>🧩 Selected Projects & Labs</h2>
-            <p>Below are lab-based projects and reports that reflect how I work in the real world: scope clearly, test methodically, and deliver actionable fixes.</p>
+            <p>These projects demonstrate how I investigate systems, map attack paths, and deliver clear, remediation-first findings — the same workflow I apply in real-world roles.</p>
+    
+            <!-- Mock Pentest Report Repository -->
+            <h4>📄 Pentest Report Templates & Case Studies</h4>
             <ul>
                 <li>
-                    <strong>GoldenEye – Mock Penetration Test Report (TryHackMe guided):</strong>
-                    A client-style report built from the GoldenEye room, with clear scope, methodology, findings, impact, and prioritized remediation.
-                    <br><em>Highlights:</em> exploit-chain narrative, CVSS-style severity, and fix-first recommendations.
-                    <br><a href="https://github.com/sangsongthong-hexterika/MockPenetrationTestingReport" target="_blank" rel="noopener noreferrer"> View GoldenEye report on GitHub</a>
-                </li>
-
-                <li>
-                    <strong>Active Directory Pentest Lab (Hexterika Cyberlab):</strong> A focused pentesting lab that simulates enterprise Active Directory attack paths and post-exploitation techniques.
-                    <br><em>Focus:</em> Kerberoasting, Pass-the-Hash, NTLM/LLMNR poisoning, SMB relay, and BloodHound mapping — paired with corresponding remediation patterns. Lab design was loosely inspired by Heath Adams / TCM Academy guidance and adapted into a custom hybrid environment for realistic testing.
-                    <br><a href="https://github.com/sangsongthong-hexterika/AD-VirtualHomeLab1" target="_blank" rel="noopener noreferrer"> View AD Pentest Lab on GitHub</a>
-                </li>
-
-                <li>
-                    <strong>AWS IAM Security Lab (Hexterika Cyberlab):</strong> Cloud lab exploring real-world IAM misconfigurations and privilege-escalation paths.
-                    <br><em>Focus:</em> least privilege, identity boundaries, detection of dangerous policies, and remediation patterns that can be applied immediately.
-                    <br><a href="https://github.com/sangsongthong-hexterika/AWS-IAM-Security" target="_blank" rel="noopener noreferrer"> View AWS IAM Security Lab on GitHub</a>
-                </li>
-
-                <li>
-                    <strong>PortSwigger Web Security Academy - Practical Walkthroughs:</strong> Documented solutions to core web vulnerabilities (SQLi, XSS, SSRF, auth flaws deserialization, and more).
-                    <br><em>Focus:</em> clear reproduction steps plus mitigation advice you could hand directly to developers.
-                    <br><a href="https://github.com/sangsongthong-hexterika/PortSwiggerWalkthroughs" target="_blank" rel="noopener noreferrer"> View Web Security Walkthroughs on GitHub</a>
-                </li>
-
-                <li>
-                    <strong>TryHackMe Progress (Top 3%):</strong> 105+ rooms and 13+ badges, emphasizing web exploitation, privilege escalation, and enumeration.
-                    <br><a href="https://tryhackme.com/p/gexter5thm" target="_blank" rel="noopener noreferrer"> View TryHackMe Profile</a>
-                    <br><a href="https://github.com/sangsongthong-hexterika/TryHackMe-Walkthroughs" target="_blank" rel="noopener noreferrer"> View TryHackMe Walkthroughs on GitHub</a>
-                </li>
-
-                <li>
-                    <strong>IT-Cybersecurity OneShots (Assorted Notes & Mini-Tests):</strong> Short curiosity-driven experiments (e.g., file-transfer behaviors across cmd vs. browser) and practical IT/security tips.
-                    <br><em>Note:</em> side notes and experiments — supporting material, not core portfolio pieces.
-                    <br><a href="https://github.com/sangsongthong-hexterika/IT-Cybersecurity-OneShots" target="_blank" rel="noopener noreferrer"> View IT-Cybersecurity OneShots on GitHub</a>
+                    <strong>Mock Penetration Test Report Repository:</strong>
+                    A central repo containing my reusable pentest report template and case-study style reports based on different labs. 
+                    The template mirrors real client deliverables: scoped testing, methodology, walkthroughs, evidence, and remediation.
+                    <br><em>Current example:</em> GoldenEye case study (TryHackMe) written as if reporting to a real client stakeholder.
+                    <br><a href="https://github.com/sangsongthong-hexterika/MockPenetrationTestingReport" target="_blank" rel="noopener noreferrer">View Repository on GitHub</a>
                 </li>
             </ul>
 
-            <p>I continuously expand these labs and reports to deepen my offensive security skills and improve how I communicate risk and remediation to real stakeholders.</p>
+            <!-- Active Directory Lab -->
+            <h4>🛡️ Active Directory Pentest Lab (Hexterika Cyberlab)</h4>
+            <ul>
+                <li>
+                    <strong>Active Directory Pentest Lab:</strong>
+                    A focused AD environment built to simulate enterprise identity attacks and hardening patterns.
+                    Includes Kerberoasting, Pass-the-Hash, NTLM/LLMNR poisoning, SMB relay, and BloodHound-based privilege mapping.
+                    Each offensive technique is paired with a remediation pattern for realistic training.
+                    <br><a href="https://github.com/sangsongthong-hexterika/AD-VirtualHomeLab1" target="_blank" rel="noopener noreferrer">View Lab Build</a>
+                </li>
+            </ul>
+
+            <!-- AWS IAM Lab -->
+            <h4>☁️ AWS IAM Security Lab</h4>
+            <ul>
+                <li>
+                    <strong>AWS IAM Security Lab:</strong>
+                    Cloud lab focused on identity misconfigurations and privilege escalation paths in AWS.
+                    Covers least privilege implementation, risky IAM patterns, cross-account exposure, and escalation through flawed policies.
+                    <br><a href="https://github.com/sangsongthong-hexterika/AWS-IAM-Security" target="_blank" rel="noopener noreferrer">View Cloud Lab</a>
+                </li>
+            </ul>
+
+            <!-- PortSwigger -->
+            <h4>🌐 PortSwigger Web Security Academy</h4>
+            <ul>
+                <li>
+                    <strong>Web Security Walkthroughs:</strong>
+                    Documented exploitation and mitigation of OWASP vulnerabilities such as SQLi, XSS, SSRF, deserialization, and auth bypasses.
+                    Each write-up includes reproduction steps and developer-friendly fixes.
+                    <br><a href="https://github.com/sangsongthong-hexterika/PortSwiggerWalkthroughs" target="_blank" rel="noopener noreferrer">View Walkthroughs</a>
+                </li>
+            </ul>
+
+            <!-- THM -->
+            <h4>🎖 TryHackMe Progress (Top 3%)</h4>
+            <ul>
+                <li>
+                    <strong>TryHackMe Achievement:</strong>
+                    105+ rooms, 13 badges, focused on privilege escalation, web exploitation, and enumeration.
+                    <br><a href="https://tryhackme.com/p/gexter5thm" target="_blank" rel="noopener noreferrer">View Profile</a>
+                    &nbsp;|&nbsp;
+                    <a href="https://github.com/sangsongthong-hexterika/TryHackMe-Walkthroughs" target="_blank" rel="noopener noreferrer">THM Walkthroughs</a>
+                </li>
+            </ul>
+
+            <!-- Optional Oneshots -->
+            <h4>📝 IT/Cybersecurity OneShots</h4>
+            <ul>
+                <li>
+                    <strong>IT-Cybersecurity OneShots:</strong>
+                    Small experiments and mini-investigations: network quirks, command-line vs browser behaviors, quick troubleshooting write-ups.
+                    <br><em>Note: These are side notes, not primary portfolio items.</em>
+                    <br><a href="https://github.com/sangsongthong-hexterika/IT-Cybersecurity-OneShots" target="_blank" rel="noopener noreferrer">View Repo</a>
+                </li>
+            </ul>
         </section>
 
         <section>
             <h2>✅ Let's Connect & Next Steps</h2>
-            <p>I'm actively seeking roles in cybersecurity and IT — especially Junior Pentester, Security Analyst, and security-focused IT positions. I'm available for remote interviews, open to project-based work through Hexterika Cyberlab, and based in Georgia (EU time zone).</p>
-            <p>If you're looking for someone who can investigate issues, communicate clearly, harden systems, and produce remediation-first reports — let's talk.
-            </p>
-
+            <p>I'm currently targeting roles across offensive security and security-focused IT — including Junior Pentester, Security Analyst, and Cloud/Identity-focused positions. I also take small, well-scoped client projects through Hexterika Cyberlab.</p>
+            <p>If you need someone who can analyze attack paths, investigate misconfigurations, break-and-fix cloud/AD labs, and produce clear remediation-first reports — I'm ready.</p>
             <ul>
                 <li>📄 <a href="https://docs.google.com/document/d/1fFm0pQ5Qw81QcFNM5m9VoprcEondsrME/edit?usp=sharing&ouid=106475564523371366647&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer">View My Resume</a></li>
                 <li>🔗 <a href="https://www.linkedin.com/in/sangsongthong-chantaranothai/" target="_blank" rel="noopener noreferrer">Connect on LinkedIn</a></li>
                 <li>💬 <a href="mailto:gexterlife.personal@gmail.com">Email Me</a></li>
                 <li>🌐 <a href="certs.html">See My Certifications</a></li>
             </ul>
-            
-            <p>Thanks for visiting — I look forward to connecting.</p>
+            <p>Thanks for visiting — let's talk if you're building a team that values offensive thinking and clear, practical security improvements.</p>
         </section>
+
     </main>
         
     <!-- Footer Section -->
