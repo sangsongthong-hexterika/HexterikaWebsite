@@ -1,0 +1,68 @@
+/* === 1. Section Backgrounds for Cyberlab === */
+  /*main {
+    text-align: center;
+  }
+
+  main h1 {
+    text-align: center;
+  }
+
+  main p {
+    text-align: left;
+  }
+
+  main ul {
+    list-style: inside;
+  }*/
+  
+  /* === 2. Theme Colors (Red/Blue/Black) === */
+  
+  h1 {
+    color: #39FF14 /* Neon Green for headers */
+  }
+
+  header h4 {
+    color: bisque;
+  }
+  
+  a {
+    color: inherit; /* Inherit text color from parent */
+    transition: color 0.3s ease; /* Smooth transition for links */
+  }
+  
+  a:hover {
+    color: #ff4d4d; /* Lighter red on hover */
+  }
+  
+  a:visited {
+    /* Purple for visited links */
+    color: #000000;
+  }
+
+  /* CTA Button - Don't Delete or Change Except The Color */
+  .button-cta {
+    display: inline-block; /* Allows padding, margin, etc. */
+    background-color: #39FF14; /* Example: A nice blue */
+    color: black; /* Example: White text */
+    padding: 10px 20px;
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Slightly rounded corners */
+    margin-top: 20px; /* Space above the button */
+    font-weight: bold;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+  }
+
+  .button-cta:hover {
+    background-color: red; /* Darker blue on hover */
+  }
+  
+  .headshot {
+    width: 20%;
+    height: auto;
+    border-radius: 20%;
+  }
+
+  .header {
+    background-color: blue;
+    color: bisque;
+  }

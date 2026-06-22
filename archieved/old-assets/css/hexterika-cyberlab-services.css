@@ -1,0 +1,56 @@
+body {
+    background-color: #0a0f1a; /* Dark background for Cyberlab */
+    color: #f2f2f2; /* Light text for contrast */
+}
+
+/* CTA Button - Don't Delete or Change Except The Color */
+  .button-cta {
+    display: inline-block; /* Allows padding, margin, etc. */
+    background-color: #39FF14; /* Example: A nice blue */
+    color: black; /* Example: White text */
+    padding: 10px 20px;
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Slightly rounded corners */
+    margin-top: 20px; /* Space above the button */
+    font-weight: bold;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.button-cta:hover {
+    background-color: red; /* Darker blue on hover */
+}
+
+main {
+    text-align: left;
+}
+
+main h1 {
+    text-align: center;
+    color: #39FF14; /* Neon Green */
+}
+
+main h2 {
+    text-align: center;
+    color: #00FFFF; /* Electric Blue */
+}
+
+main h4 {
+    text-align: center;
+    color: #FD3DB5; /* Neon Yellow */
+}
+
+main strong {
+    color: gold;
+}
+
+main a {
+    color:  #39FF14;
+}
+
+a:hover {
+    color: red;
+}
+
+main ul li {
+    list-style: square;
+}
