@@ -48,6 +48,7 @@
     text-decoration: none; /* Remove underline */
     border-radius: 5px; /* Slightly rounded corners */
     margin-top: 20px; /* Space above the button */
+    margin-bottom: 20px; /* Space below the button */
     font-weight: bold;
     transition: background-color 0.3s ease; /* Smooth hover effect */
   }
