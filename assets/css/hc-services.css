@@ -1,57 +1,208 @@
-body {
-    background-color: #0a0f1a; /* Dark background for Cyberlab */
-    color: #f2f2f2; /* Light text for contrast */
+/* ================================
+   Hexterika Cyberlab Services Page
+   ================================ */
+
+:root {
+  --hc-bg: #070b14;
+  --hc-surface: #11172a;
+  --hc-surface-open: #151d33;
+  --hc-panel: #1b2440;
+  --hc-border: #2a3658;
+
+  --hc-text: #e6e9f0;
+  --hc-muted: #a8afc0;
+  --hc-soft: #d7dbe4;
+
+  --hc-accent: #00ff9d;
+  --hc-cyan: #22d3ee;
+
+  --hc-radius-lg: 14px;
+  --hc-radius-md: 10px;
+  --hc-radius-sm: 6px;
 }
 
-/* CTA Button - Don't Delete or Change Except The Color */
-  .button-cta {
-    display: inline-block; /* Allows padding, margin, etc. */
-    background-color: #39FF14; /* Example: A nice blue */
-    color: black; /* Example: White text */
-    padding: 10px 20px;
-    text-decoration: none; /* Remove underline */
-    border-radius: 5px; /* Slightly rounded corners */
-    margin-top: 20px; /* Space above the button */
-    margin-bottom: 10px; /* Space below the button */
-    font-weight: bold;
-    transition: background-color 0.3s ease; /* Smooth hover effect */
+/* Page wrapper */
+
+.hc-services {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  color: var(--hc-text);
 }
 
-.button-cta:hover {
-    background-color: red; /* Darker blue on hover */
+.hc-services__title {
+  color: var(--hc-accent);
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  margin-bottom: 2rem;
 }
 
-main {
-    text-align: left;
+/* Main service card */
+
+.hc-service-card {
+  margin-bottom: 1.25rem;
 }
 
-main h1 {
-    text-align: center;
-    color: #39FF14; /* Neon Green */
+.hc-service-card__details {
+  background: var(--hc-surface);
+  border: 1px solid var(--hc-border);
+  border-radius: var(--hc-radius-lg);
+  overflow: hidden;
 }
 
-main h2 {
-    text-align: center;
-    color: #00FFFF; /* Electric Blue */
+/* Summary / collapsed state */
+
+.hc-service-card__summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
 }
 
-main h4 {
-    text-align: center;
-    color: #FD3DB5; /* Neon Yellow */
+.hc-service-card__summary::-webkit-details-marker {
+  display: none;
 }
 
-main strong {
-    color: gold;
+.hc-service-card__eyebrow {
+  color: var(--hc-accent);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin: 0 0 0.35rem;
 }
 
-main a {
-    color:  #39FF14;
+.hc-service-card__title {
+  font-size: 1.25rem;
+  margin: 0;
+  color: var(--hc-text);
 }
 
-a:hover {
-    color: red;
+.hc-service-card__intro {
+  margin: 0.5rem 0 0;
+  color: var(--hc-muted);
+  line-height: 1.6;
+  max-width: 680px;
 }
 
-main ul li {
-    list-style: square;
+.hc-service-card__toggle {
+  color: var(--hc-accent);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.hc-service-card__toggle::before {
+  content: "[+]";
+}
+
+.hc-service-card__details[open] .hc-service-card__toggle::before {
+  content: "[-]";
+}
+
+/* Expanded area */
+
+.hc-service-card__content {
+  background: var(--hc-surface-open);
+  border-top: 1px solid var(--hc-border);
+  padding: 1.5rem;
+}
+
+/* Snapshot row */
+
+.hc-service-card__snapshot {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+
+.hc-service-card__snapshot span {
+  border: 1px solid var(--hc-border);
+  background: var(--hc-bg);
+  color: var(--hc-soft);
+  border-radius: 999px;
+  padding: 0.45rem 0.75rem;
+  font-size: 0.85rem;
+}
+
+/* Inner panel grid */
+
+.hc-service-card__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.hc-service-panel,
+.hc-service-price {
+  background: var(--hc-panel);
+  border: 1px solid var(--hc-border);
+  border-radius: var(--hc-radius-md);
+  padding: 1rem;
+}
+
+.hc-service-panel h3,
+.hc-service-price h3 {
+  color: var(--hc-accent);
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin: 0 0 0.75rem;
+}
+
+.hc-service-panel ul {
+  margin: 0;
+  padding-left: 1.15rem;
+  color: var(--hc-muted);
+  line-height: 1.6;
+}
+
+.hc-service-panel li + li {
+  margin-top: 0.45rem;
+}
+
+/* Pricing block */
+
+.hc-service-price {
+  margin-top: 1rem;
+}
+
+.hc-service-price p {
+  color: var(--hc-muted);
+  line-height: 1.6;
+  margin: 0.5rem 0 0;
+}
+
+.hc-service-price strong {
+  color: var(--hc-text);
+}
+
+.hc-service-price s {
+  color: var(--hc-muted);
+}
+
+/* Focus state for keyboard users */
+
+.hc-service-card__summary:focus-visible {
+  outline: 2px solid var(--hc-accent);
+  outline-offset: 4px;
+}
+
+/* Mobile */
+
+@media (max-width: 720px) {
+  .hc-service-card__summary {
+    align-items: flex-start;
+  }
+
+  .hc-service-card__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hc-service-card__content {
+    padding: 1rem;
+  }
 }
