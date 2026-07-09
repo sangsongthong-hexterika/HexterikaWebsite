@@ -237,3 +237,82 @@
     color: var(--hc-muted);
     line-height: 1.7;
 }
+
+/* Services page main reset */
+main {
+  background: var(--hc-bg);
+  color: var(--hc-text);
+}
+
+.hc-services-hero {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 4rem 1rem 3rem;
+  text-align: center;
+}
+
+.hc-services-hero h1 {
+  margin: 0 0 1rem;
+  font-size: clamp(2.3rem, 6vw, 4.5rem);
+  line-height: 1.05;
+  color: var(--hc-text);
+}
+
+.hc-services-hero__lead,
+.hc-services-hero__note {
+  color: var(--hc-soft);
+  line-height: 1.7;
+  max-width: 900px;
+  margin: 0.75rem auto;
+}
+
+.hc-services-hero__link {
+  display: inline-block;
+  margin-top: 0.75rem;
+  color: var(--hc-accent);
+  font-weight: 700;
+}
+
+.hc-info-card {
+  max-width: 960px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background: var(--hc-surface);
+  border: 1px solid var(--hc-border);
+  border-radius: var(--hc-radius-lg);
+  color: var(--hc-text);
+}
+
+.hc-info-card h2 {
+  color: var(--hc-accent);
+  margin: 0 0 0.75rem;
+  font-size: 1.6rem;
+}
+
+.hc-info-card p {
+  color: var(--hc-muted);
+  line-height: 1.7;
+}
+
+.hc-link-grid {
+  display: grid;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.hc-link-grid a,
+.hc-primary-link {
+  display: block;
+  padding: 0.9rem 1rem;
+  background: var(--hc-panel);
+  border: 1px solid var(--hc-border);
+  border-radius: var(--hc-radius-md);
+  color: var(--hc-accent);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.hc-link-grid a:hover,
+.hc-primary-link:hover {
+  border-color: var(--hc-accent);
+}
