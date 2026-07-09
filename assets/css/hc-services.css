@@ -1,6 +1,20 @@
-/* ================================
-   Hexterika Cyberlab Services Page
-   ================================ */
+/*
+==========================================================
+
+The hc-service-card component is the canonical
+Hexterika Cyberlab service card.
+
+Do not redesign its HTML hierarchy or CSS structure
+unless intentionally creating Version 2.
+
+==========================================================
+*/
+
+
+/* ==========================================================
+   01. Design Tokens
+   Colors, radius, reusable values
+   ========================================================== */
 
 :root {
   --hc-bg: #070b14;
@@ -21,7 +35,16 @@
   --hc-radius-sm: 6px;
 }
 
-/* Page wrapper */
+
+/* ==========================================================
+   02. Page Layout
+   Applies to hc-services.html main content
+   ========================================================== */
+
+main {
+  background: var(--hc-bg);
+  color: var(--hc-text);
+}
 
 .hc-services {
   max-width: 960px;
@@ -36,7 +59,46 @@
   margin-bottom: 2rem;
 }
 
-/* Main service card */
+
+/* ==========================================================
+   03. Hero / Intro
+   Top section of services page
+   ========================================================== */
+
+.hc-services-hero {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 4rem 1rem 3rem;
+  text-align: center;
+}
+
+.hc-services-hero h1 {
+  margin: 0 0 1rem;
+  font-size: clamp(2.3rem, 6vw, 4.5rem);
+  line-height: 1.05;
+  color: var(--hc-text);
+}
+
+.hc-services-hero__lead,
+.hc-services-hero__note {
+  color: var(--hc-soft);
+  line-height: 1.7;
+  max-width: 900px;
+  margin: 0.75rem auto;
+}
+
+.hc-services-hero__link {
+  display: inline-block;
+  margin-top: 0.75rem;
+  color: var(--hc-accent);
+  font-weight: 700;
+}
+
+
+/* ==========================================================
+   04. Service Card
+   Outer collapsible card component
+   ========================================================== */
 
 .hc-service-card {
   margin-bottom: 1.25rem;
@@ -49,7 +111,11 @@
   overflow: hidden;
 }
 
-/* Summary / collapsed state */
+
+/* ==========================================================
+   05. Service Card Summary
+   Collapsed/visible part of each card
+   ========================================================== */
 
 .hc-service-card__summary {
   list-style: none;
@@ -102,15 +168,17 @@
   content: "[-]";
 }
 
-/* Expanded area */
+
+/* ==========================================================
+   06. Service Card Expanded Content
+   Opened part of each card
+   ========================================================== */
 
 .hc-service-card__content {
   background: var(--hc-surface-open);
   border-top: 1px solid var(--hc-border);
   padding: 1.5rem;
 }
-
-/* Snapshot row */
 
 .hc-service-card__snapshot {
   display: flex;
@@ -128,7 +196,11 @@
   font-size: 0.85rem;
 }
 
-/* Inner panel grid */
+
+/* ==========================================================
+   07. Service Inner Panels
+   Good fit, included, not included, deliverables
+   ========================================================== */
 
 .hc-service-card__grid {
   display: grid;
@@ -164,7 +236,11 @@
   margin-top: 0.45rem;
 }
 
-/* Pricing block */
+
+/* ==========================================================
+   08. Service Price / Extra Service Notes
+   Pricing block and service-specific notes
+   ========================================================== */
 
 .hc-service-price {
   margin-top: 1rem;
@@ -184,94 +260,44 @@
   color: var(--hc-muted);
 }
 
-/* Focus state for keyboard users */
 
-.hc-service-card__summary:focus-visible {
-  outline: 2px solid var(--hc-accent);
-  outline-offset: 4px;
-}
-
-/* Mobile */
-
-@media (max-width: 720px) {
-  .hc-service-card__summary {
-    align-items: flex-start;
-  }
-
-  .hc-service-card__grid {
-    grid-template-columns: 1fr;
-  }
-
-  .hc-service-card__content {
-    padding: 1rem;
-  }
-}
-
-/* ==========================================
-   How I Work
-   ========================================== */
+/* ==========================================================
+   09. How I Work
+   Process card inside services page
+   ========================================================== */
 
 .hc-service-card__process {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .hc-process-step {
-    background: var(--hc-panel);
-    border: 1px solid var(--hc-border);
-    border-radius: var(--hc-radius-md);
-    padding: 1rem;
+  background: var(--hc-panel);
+  border: 1px solid var(--hc-border);
+  border-radius: var(--hc-radius-md);
+  padding: 1rem;
 }
 
 .hc-process-step h3 {
-    margin: 0 0 .75rem;
-    color: var(--hc-accent);
-    font-size: .9rem;
-    text-transform: uppercase;
-    letter-spacing: .05em;
+  margin: 0 0 0.75rem;
+  color: var(--hc-accent);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 .hc-process-step p {
-    margin: 0;
-    color: var(--hc-muted);
-    line-height: 1.7;
-}
-
-/* Services page main reset */
-main {
-  background: var(--hc-bg);
-  color: var(--hc-text);
-}
-
-.hc-services-hero {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 4rem 1rem 3rem;
-  text-align: center;
-}
-
-.hc-services-hero h1 {
-  margin: 0 0 1rem;
-  font-size: clamp(2.3rem, 6vw, 4.5rem);
-  line-height: 1.05;
-  color: var(--hc-text);
-}
-
-.hc-services-hero__lead,
-.hc-services-hero__note {
-  color: var(--hc-soft);
+  margin: 0;
+  color: var(--hc-muted);
   line-height: 1.7;
-  max-width: 900px;
-  margin: 0.75rem auto;
 }
 
-.hc-services-hero__link {
-  display: inline-block;
-  margin-top: 0.75rem;
-  color: var(--hc-accent);
-  font-weight: 700;
-}
+
+/* ==========================================================
+   10. Content Cards
+   Sample Work, Free Chat, future non-service cards
+   ========================================================== */
 
 .hc-info-card {
   max-width: 960px;
@@ -315,4 +341,35 @@ main {
 .hc-link-grid a:hover,
 .hc-primary-link:hover {
   border-color: var(--hc-accent);
+}
+
+
+/* ==========================================================
+   11. Accessibility
+   Keyboard focus states
+   ========================================================== */
+
+.hc-service-card__summary:focus-visible {
+  outline: 2px solid var(--hc-accent);
+  outline-offset: 4px;
+}
+
+
+/* ==========================================================
+   12. Responsive
+   Mobile layout
+   ========================================================== */
+
+@media (max-width: 720px) {
+  .hc-service-card__summary {
+    align-items: flex-start;
+  }
+
+  .hc-service-card__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hc-service-card__content {
+    padding: 1rem;
+  }
 }
