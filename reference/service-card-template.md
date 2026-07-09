@@ -1,0 +1,39 @@
+# Service Name
+
+One-sentence description explaining the business problem this service solves.
+
+## Good fit if
+
+- ...
+- ...
+- ...
+
+## What's included
+
+- ...
+- ...
+- ...
+
+## Not included
+
+- ...
+- ...
+- ...
+
+## What you receive
+
+- ...
+- ...
+- ...
+
+## How this service works *(Optional)*
+
+Explain only service-specific mechanics that help the client understand how this engagement works. Do not repeat company-wide workflow.
+
+## Pricing
+
+~~$XXX~~
+
+### Launch Price: $XXX
+
+Short pricing note.
