@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hexterika Cyberlab -- Services</title>
-    <link rel="stylesheet" href="assets/css/base.css">
     <link rel="stylesheet" href="assets/css/hc-services.css">
+    <link rel="stylesheet" href="assets/css/base.css">
 </head>
 <body>
     <!-- Header Section -->
@@ -33,162 +33,178 @@
             <p>Small, well-scoped, deliverable-based services for individuals and small businesses. Every service is delivered remotely, documented in plain language, and never started without your written go-ahead. Not sure which one fits? <a href="#not-sure">Start with a free chat.</a></p>
         </section>
 
-        <!--Template Service Card-->
-        <section aria-labelledby="services-title">
+<section class="hc-services" aria-labelledby="services-title">
 
-            <article class="service-card">
-                <details>
-                    <summary><h2>Service Name</h2></summary>
-                    <div class="service-body-in-scope"> <!-- div = styling wrapper, correct -->
-                        <h3>What it covers / In scope:</h3>
-                        <ul>…</ul>
-                    </div>
+  <h1 id="services-title" class="hc-services__title">
+    Hexterika Cyberlab Services
+  </h1>
 
-                    <div class="service-body-out-of-scope">
-                        <h3>Out of scope:</h3>
-                        <ul>...</ul>
-                    </div>
+  <article class="hc-service-card">
+    <details class="hc-service-card__details">
 
-                    <div class="service-terms">
-                        <h3>Revisions</h3>
-                        <ul>...</ul>
-                    </div>
+      <summary class="hc-service-card__summary">
+        <div>
+          <p class="hc-service-card__eyebrow">Vulnerability Assessment</p>
 
-                    <div class="service-cta">
-                        <h3>Pricing</h3>
-                        <ul>...</ul>
-                    </div>
-                </details>
-            </article>
+          <h2 class="hc-service-card__title">
+            Vulnerability Assessment
+          </h2>
+
+          <p class="hc-service-card__intro">
+            Find verified security weaknesses in your public-facing systems before attackers do.
+          </p>
+        </div>
+
+        <span class="hc-service-card__toggle" aria-hidden="true"></span>
+      </summary>
+
+      <div class="hc-service-card__content">
+
+        <div class="hc-service-card__snapshot">
+          <span>Best for: Small businesses with websites or public-facing services</span>
+          <span>Starts at: $120</span>
+        </div>
+
+        <div class="hc-service-card__grid">
+
+          <section class="hc-service-panel">
+            <h3>Good fit if</h3>
+            <ul>
+              <li>You have one public-facing website.</li>
+              <li>You have up to five public IP addresses.</li>
+              <li>You want verified findings, not a raw scanner dump.</li>
+            </ul>
+          </section>
+
+          <section class="hc-service-panel">
+            <h3>What's included</h3>
+            <ul>
+              <li>Assessment of one website or up to five public IPs.</li>
+              <li>Automated vulnerability scanning.</li>
+              <li>Manual verification to reduce false positives.</li>
+              <li>Severity ranking for verified findings.</li>
+            </ul>
+          </section>
+
+          <section class="hc-service-panel">
+            <h3>Not included</h3>
+            <ul>
+              <li>Penetration testing or active exploitation.</li>
+              <li>Internal network assessment.</li>
+              <li>Denial-of-service testing.</li>
+              <li>Fixing vulnerabilities for you.</li>
+            </ul>
+          </section>
+
+          <section class="hc-service-panel">
+            <h3>What you receive</h3>
+            <ul>
+              <li>Vulnerability Assessment Report.</li>
+              <li>Verified findings ranked by severity.</li>
+              <li>Remediation recommendations.</li>
+              <li>Scope and assessment-window summary.</li>
+            </ul>
+          </section>
+
+        </div>
+
+        <section class="hc-service-price">
+          <h3>Pricing</h3>
+          <p><s>$200</s> <strong>Launch price: $120</strong></p>
+          <p>Starting price for one website or up to five public IP addresses. Larger scopes are quoted separately after the free screening chat.</p>
         </section>
 
-        <!--Service 1: VA-->
-        <article class="service-card">
-            <details>
-                <summary class="service-summary">
-                    <div class="service-summary-main">
-                        <h2>Vulnerability Assessment</h2>
-                        <p class="service-overview">
-                        Identify verified security weaknesses in your internet-facing systems before attackers do.
-                        </p>
-                    </div>
+      </div>
 
-                    <div class="service-summary-meta">
-                        <p>
-                            <strong>For:</strong>
-                            Small businesses with public-facing websites or services
-                        </p>
+    </details>
+  </article>
 
-                        <p>
-                            <strong>From:</strong>
-                            $120
-                        </p>    
-                    </div>
-                </summary>
+</section>
 
-                <div class="service-content">
+<!-- Template Service Card -->
+<!--For other services, only change:
 
-                    <section class="service-block">
+eyebrow, title, intro, Best for, Starts at, the four panels, and pricing.
 
-                        <h3>What's Included</h3>
+Keep the structure exactly the same unless a service truly needs an extra panel.-->
+<article class="hc-service-card">
+  <details class="hc-service-card__details">
 
-                        <ul>
+    <summary class="hc-service-card__summary">
+      <div>
+        <p class="hc-service-card__eyebrow">SERVICE CATEGORY / SHORT LABEL</p>
 
-                            <li>Assessment of one external-facing website <em>or</em> up to five public IP addresses.</li>
+        <h2 class="hc-service-card__title">
+          Service Name
+        </h2>
 
-                            <li>Industry-standard automated vulnerability scanning.</li>
+        <p class="hc-service-card__intro">
+          One-sentence value statement explaining the problem this service solves.
+        </p>
+      </div>
 
-                            <li>Manual verification to reduce false positives.</li>
+      <span class="hc-service-card__toggle" aria-hidden="true"></span>
+    </summary>
 
-                            <li>Risk prioritization based on verified findings.</li>
+    <div class="hc-service-card__content">
 
-                        </ul>
+      <div class="hc-service-card__snapshot">
+        <span>Best for: Client type / situation</span>
+        <span>Starts at: $XXX</span>
+      </div>
 
-                    </section>
+      <div class="hc-service-card__grid">
 
-                    <section class="service-block">
+        <section class="hc-service-panel">
+          <h3>Good fit if</h3>
+          <ul>
+            <li>Client situation / condition.</li>
+            <li>Client goal / problem.</li>
+            <li>Client expectation.</li>
+          </ul>
+        </section>
 
-                        <h3>What's Not Included</h3>
+        <section class="hc-service-panel">
+          <h3>What's included</h3>
+          <ul>
+            <li>Work item 1.</li>
+            <li>Work item 2.</li>
+            <li>Work item 3.</li>
+          </ul>
+        </section>
 
-                        <ul>
+        <section class="hc-service-panel">
+          <h3>Not included</h3>
+          <ul>
+            <li>Boundary 1.</li>
+            <li>Boundary 2.</li>
+            <li>Boundary 3.</li>
+          </ul>
+        </section>
 
-                            <li>Penetration testing or active exploitation.</li>
+        <section class="hc-service-panel">
+          <h3>What you receive</h3>
+          <ul>
+            <li>Deliverable 1.</li>
+            <li>Deliverable 2.</li>
+            <li>Evidence / documentation.</li>
+          </ul>
+        </section>
 
-                            <li>Internal network assessments.</li>
+      </div>
 
-                            <li>Denial-of-service testing.</li>
+      <!-- Optional: use only when service-specific mechanics matter -->
+      <section class="hc-service-price">
+        <h3>Pricing</h3>
+        <p><s>$XXX</s> <strong>Launch price: $XXX</strong></p>
+        <p>Short pricing note. Larger or custom scopes are quoted separately.</p>
+      </section>
 
-                            <li>Social engineering.</li>
+    </div>
 
-                            <li>Remediation implementation.</li>
+  </details>
+</article>
 
-                            <li>Continuous monitoring.</li>
-
-                        </ul>
-
-                    </section>
-
-                    <section class="service-block">
-
-                        <h3>What You'll Receive</h3>
-
-                        <ul>
-
-                            <li>Vulnerability Assessment Report.</li>
-
-                            <li>Prioritized verified findings.</li>
-
-                            <li>Severity ratings.</li>
-
-                            <li>Practical remediation recommendations.</li>
-
-                        </ul>
-
-                    </section>
-
-                    <section class="service-block">
-
-                        <h3>How This Service Works</h3>
-
-                        <ul>
-
-                            <li>Assessment is performed only after written authorization.</li>
-
-                            <li>Only verified findings are included in the final report.</li>
-
-                            <li>The assessment reflects your systems during the agreed assessment window.</li>
-
-                        </ul>
-
-                    </section>
-
-                    <section class="service-block">
-
-                        <h3>Pricing</h3>
-
-                        <p>
-
-                            <s>$200</s>
-
-                            <strong>Launch price: $120</strong>
-
-                        </p>
-
-                        <p>
-
-                            One website or up to five public IP addresses.
-                            Larger scopes are quoted separately after the free screening chat.
-
-                        </p>
-
-                    </section>
-
-                </div>
-
-            </details>
-
-        </article>
-        
     </main>
  
     <!-- Footer Section -->
