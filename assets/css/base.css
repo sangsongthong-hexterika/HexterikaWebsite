@@ -1,156 +1,236 @@
-/* 1. CSS Reset */
+/*
+==========================================================
+
+Hexterika Cyberlab
+
+base.css
+
+Purpose:
+Global reusable styles shared across the entire website.
+
+Contains:
+- CSS Reset
+- Typography
+- Global Layout
+- Header
+- Navigation
+- Main Layout
+- Footer
+- Links
+- Buttons
+- Images
+- Forms
+
+Do NOT place page-specific styles here.
+
+==========================================================
+*/
+
+
+/* ======================================================
+   1. CSS Reset
+====================================================== */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  
-  /* 2. Base Font Settings */
-  html {
-    font-family: 'Arial', sans-serif; /* You can replace this later */
+}
+
+
+/* ======================================================
+   2. Base Typography
+====================================================== */
+
+html {
+    font-family: Arial, sans-serif;
     font-size: 16px;
     line-height: 1.6;
+
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-  }
-  
-  /* 3. Body Defaults */
+}
 
-  body {
-    /* Background & text color placeholders */
-    background-color: black; /* Placeholder */
-    color: #f2f2f2; /* Placeholder */
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);  /* 12 equal columns */
-    /* This is what make the header, main, and footer able to display in 12 columns grids. */ 
-    gap: 1rem;  /* Optional: space between columns */
-    min-height: 100vh; /* Ensure body covers the full height of the viewport */
-  }
+body {
+    background-color: black;
+    color: #f2f2f2;
+}
 
-  /* 4. Headings & Paragraphs */
-  h1 {
+h1 {
     font-size: 3rem;
     font-weight: 700;
-  }
-  h2 {
+}
+
+h2 {
     font-size: 2.25rem;
     font-weight: 600;
-  }
-  h3 {
+}
+
+h3 {
     font-size: 1.75rem;
     font-weight: 600;
-  }
-  h4 {
+}
+
+h4 {
     font-size: 1.5rem;
     font-weight: 600;
-  }
-  h5 {
+}
+
+h5 {
     font-size: 1.25rem;
     font-weight: 600;
-  }
-  h6 {
+}
+
+h6 {
     font-size: 1rem;
     font-weight: 600;
-  }
-  p {
+}
+
+p {
     font-size: 1rem;
     font-weight: 400;
     margin-bottom: 1rem;
-  }
-  
-  /* 5. Links */
-  a {
-    color: #004080;            /* Default link color */
+}
+
+
+/* ======================================================
+   3. Global Layout
+====================================================== */
+
+body {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1rem;
+    min-height: 100vh;
+}
+
+
+/* ======================================================
+   4. Header
+====================================================== */
+
+header {
+    display: grid;
+
+    grid-row: 1;
+    grid-column: 2 / 12;
+
+    justify-content: center;
+
+    padding-block: 1rem;
+}
+
+
+/* ======================================================
+   5. Navigation
+====================================================== */
+
+header nav ul {
+    display: flex;
+    gap: 1rem;
+
+    list-style: none;
+}
+
+header nav a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+
+/* ======================================================
+   6. Main Content
+====================================================== */
+
+main {
+    display: grid;
+
+    grid-row: 2;
+    grid-column: 2 / 12;
+
+    text-align: center;
+}
+
+main ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+main a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+
+/* ======================================================
+   7. Footer
+====================================================== */
+
+footer {
+    display: grid;
+
+    grid-row: 3;
+    grid-column: 2 / 12;
+
+    justify-content: center;
+}
+
+
+/* ======================================================
+   8. Global Links
+====================================================== */
+
+a {
+    color: #004080;
     text-decoration: none;
     transition: color 0.3s ease;
-  }
-  
-  a:hover {
-    color: #ff9900;            /* Hover color */
+}
+
+a:hover {
+    color: #ff9900;
     text-decoration: underline;
-  }
-  
-  /* 6. Buttons */
-  button {
+}
+
+
+/* ======================================================
+   9. Buttons
+====================================================== */
+
+button {
     font: inherit;
+
     padding: 0.5rem 1rem;
+
     border: none;
+
     cursor: pointer;
-  }
-  
-  /* 7. Images and Media */
-  img {
-    max-width: 50%;
+}
+
+
+/* ======================================================
+   10. Images
+====================================================== */
+
+img {
+    display: block;
+    max-width: 100%;
     height: auto;
-  }
-  
-  /* 8. Forms (Optional, minimal) */
-  input, textarea {
+}
+
+
+/* ======================================================
+   11. Forms
+====================================================== */
+
+input,
+textarea {
     font: inherit;
-  }
+}
 
-  /* 9. Form Elements (optional for now) */
-    /* Basic font styling for input, textarea, etc. */
 
-  /* 10. Utility Classes (optional, can add later) */
-    /* For common text alignment, spacing, etc. */
+/* ======================================================
+   12. Utility Classes
+====================================================== */
 
-  /* 11. Layout (Flexbox/Grid) */
-  
-  header {
-    display: grid;
-    /* grid-template-columns: repeat(12, 1fr); */
-    grid-row: 1;
-    grid-column-start: 2;
-    grid-column-end: 12;
-    justify-content: center;
-    padding-block: 1rem;
-  }
-
-  main {
-    display: grid;
-    grid-row-start: 2;
-    grid-column-start: 2;
-    grid-column-end: 12;
-    text-align: center;
-  }
-
-  footer {
-    display: grid;
-    grid-row: 3;
-    grid-column-start: 2;
-    grid-column-end: 12;
-    justify-content: center;
-  }
-
-  main ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  main a {
-    text-decoration: underline;
-    color: inherit; /* or pick your desired color */
-  }
-  
-  header nav ul {
-    display: flex; /* Make the inside of the header nav bar unordered list display in 1 line*/
-    gap: 1rem;
-    list-style: none;
-  }
-  
-  header nav a {
-    text-decoration: underline;
-    color: inherit; /* or pick your desired color */
-  }
-  
-  .header {
-    background-color: blue;
-    color: bisque;
-  }
-
-  .footer {
-    background-color: beige;
-    color: black;
-  }
+/* Reserved for future reusable utility classes. */

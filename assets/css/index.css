@@ -1,69 +1,110 @@
-/* === 1. Section Backgrounds for Cyberlab === */
-  /*main {
-    text-align: center;
-  }
+/*
+==========================================================
 
-  main h1 {
-    text-align: center;
-  }
+Hexterika Cyberlab
 
-  main p {
-    text-align: left;
-  }
+index.css
 
-  main ul {
-    list-style: inside;
-  }*/
-  
-  /* === 2. Theme Colors (Red/Blue/Black) === */
-  
-  h1 {
-    color: #39FF14 /* Neon Green for headers */
-  }
+Purpose:
+Homepage-specific styling.
 
-  header h4 {
+Contains:
+- Homepage branding
+- Welcome section
+- Why Choose Me section
+- CTA section
+- Homepage images
+
+Global reusable styles belong in:
+assets/css/base.css
+
+==========================================================
+*/
+
+
+/* ======================================================
+   1. Homepage Theme
+====================================================== */
+
+h1 {
+    color: #39FF14;
+}
+
+.header {
+    background-color: blue;
     color: bisque;
-  }
-  
-  a {
-    color: inherit; /* Inherit text color from parent */
-    transition: color 0.3s ease; /* Smooth transition for links */
-  }
-  
-  a:hover {
-    color: #ff4d4d; /* Lighter red on hover */
-  }
-  
-  a:visited {
-    /* Purple for visited links */
-    color: #000000;
-  }
+}
 
-  /* CTA Button - Don't Delete or Change Except The Color */
-  .button-cta {
-    display: inline-block; /* Allows padding, margin, etc. */
-    background-color: #39FF14; /* Example: A nice blue */
-    color: black; /* Example: White text */
-    padding: 10px 20px;
-    text-decoration: none; /* Remove underline */
-    border-radius: 5px; /* Slightly rounded corners */
-    margin-top: 20px; /* Space above the button */
-    margin-bottom: 20px; /* Space below the button */
-    font-weight: bold;
-    transition: background-color 0.3s ease; /* Smooth hover effect */
-  }
+.footer {
+    background-color: beige;
+    color: black;
+}
 
-  .button-cta:hover {
-    background-color: red; /* Darker blue on hover */
-  }
-  
-  .headshot {
+
+/* ======================================================
+   2. Welcome Section
+====================================================== */
+
+.headshot {
     width: 20%;
     height: auto;
     border-radius: 20%;
-  }
+}
 
-  .header {
-    background-color: blue;
-    color: bisque;
-  }
+
+/* ======================================================
+   3. Why Choose Me
+====================================================== */
+
+/*
+Reserved for future homepage-specific styling.
+
+This section intentionally remains empty until
+the homepage redesign begins.
+*/
+
+
+/* ======================================================
+   4. Call-To-Action (CTA)
+====================================================== */
+
+/*
+Do not redesign this component unless intentionally
+creating a new version.
+
+This is the canonical homepage CTA button.
+*/
+
+.button-cta {
+    display: inline-block;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    padding: 10px 20px;
+
+    background-color: #39FF14;
+    border-radius: 5px;
+
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+
+    transition: background-color 0.3s ease;
+}
+
+.button-cta:hover {
+    background-color: red;
+}
+
+
+/* ======================================================
+   5. Homepage Utilities
+====================================================== */
+
+/*
+Reserved for homepage-only helper classes.
+
+Do not place reusable utility classes here.
+Reusable utilities belong in base.css.
+*/
