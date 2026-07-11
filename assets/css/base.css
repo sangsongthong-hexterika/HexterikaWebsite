@@ -227,46 +227,35 @@ Depends on:
 */
 
 .hc-nav {
-    display: flex;
-
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
-
     width: 100%;
     max-width: 1200px;
-
     margin: 0 auto;
 }
 
 .hc-nav-brand {
+    justify-self: start;
     color: inherit;
-
     font-size: 2rem;
     font-weight: 700;
-
     letter-spacing: -0.02em;
-
     text-decoration: none;
-
-    transition:
-        color 0.3s ease,
-        opacity 0.3s ease;
+    transition: color 0.3s ease, opacity 0.3s ease;
 }
 
 .hc-nav-brand:hover {
     color: inherit;
     opacity: 0.9;
-
     text-decoration: none;
 }
 
 .hc-nav-list {
     display: flex;
-
+    justify-self: center;
     align-items: center;
-
     gap: 2rem;
-
     list-style: none;
 }
 
@@ -622,24 +611,25 @@ component.
 */
 
 @media (max-width: 768px) {
-
     .hc-nav {
-        flex-direction: column;
-
+        grid-template-columns: 1fr;
+        justify-items: center;
         gap: 1rem;
+    }
+
+    .hc-nav-brand,
+    .hc-nav-list {
+        justify-self: center;
     }
 
     .hc-nav-list {
         flex-wrap: wrap;
-
         justify-content: center;
-
         gap: 1rem;
     }
 
     .hc-footer-grid {
         grid-template-columns: 1fr;
     }
-
 }
 
