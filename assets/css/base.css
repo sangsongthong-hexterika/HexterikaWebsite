@@ -226,10 +226,65 @@ main a {
 
 footer {
     display: grid;
-
     grid-row: 3;
-    
-    justify-content: center;
+}
+
+/*
+==========================================================
+Footer Component
+
+Canonical footer component for the entire website.
+
+==========================================================
+*/
+
+.hc-footer {
+    width: 100%;
+}
+
+.hc-footer-brand {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.hc-footer-grid {
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+
+    gap: 2rem;
+
+    margin-bottom: 2rem;
+}
+
+.hc-footer-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.hc-footer-heading {
+    margin-bottom: 1rem;
+}
+
+.hc-footer-list {
+    list-style: none;
+}
+
+.hc-footer-item + .hc-footer-item {
+    margin-top: 0.5rem;
+}
+
+.hc-footer-link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.hc-footer-link:hover {
+    text-decoration: underline;
+}
+
+.hc-footer-copyright {
+    text-align: center;
 }
 
 
