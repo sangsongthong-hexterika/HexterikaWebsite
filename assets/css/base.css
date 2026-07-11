@@ -630,6 +630,7 @@ component.
 
     .hc-footer-grid {
         grid-template-columns: 1fr;
+        padding-inline: 1rem;
     }
 }
 
