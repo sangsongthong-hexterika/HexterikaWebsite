@@ -189,6 +189,11 @@ header {
     align-items: center;
 
     padding-block: 1rem;
+
+    background-color: #0b0f1a;
+    color: #f2f2f2;
+
+    border-bottom: 1px solid #26345d;
 }
 
 
@@ -367,6 +372,14 @@ footer {
     display: grid;
 
     grid-row: 3;
+
+    background-color: #0b0f1a;
+    color: #f2f2f2;
+
+    border-top: 1px solid #26345d;
+
+    margin-top: 5rem;
+    padding: 4rem 0 2rem;
 }
 
 
