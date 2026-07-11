@@ -125,15 +125,53 @@ header {
    5. Navigation
 ====================================================== */
 
-header nav ul {
+.hc-nav {
     display: flex;
-    gap: 1rem;
+
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+}
+
+.hc-nav-brand {
+    color: inherit;
+
+    font-size: 1.5rem;
+    font-weight: 700;
+
+    text-decoration: none;
+}
+
+.hc-nav-brand:hover {
+    text-decoration: none;
+}
+
+.hc-nav-list {
+    display: flex;
+
+    gap: 2rem;
 
     list-style: none;
 }
 
-header nav a {
+.hc-nav-item {
+    margin: 0;
+    padding: 0;
+}
+
+.hc-nav-link {
     color: inherit;
+
+    font-size: 1rem;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition: color 0.3s ease;
+}
+
+.hc-nav-link:hover {
     text-decoration: underline;
 }
 
