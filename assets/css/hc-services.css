@@ -300,13 +300,13 @@ main {
    ========================================================== */
 
 .hc-info-card {
-    max-width: 960px;
-    margin: 0 auto 1.5rem;
-    padding: 1.5rem;
-    background: var(--hc-surface);
-    border: 1px solid var(--hc-border);
-    border-radius: var(--hc-radius-lg);
-    color: var(--hc-text);
+  max-width: 960px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background: var(--hc-surface);
+  border: 1px solid var(--hc-border);
+  border-radius: var(--hc-radius-lg);
+  color: var(--hc-text);
 }
 
 .hc-info-card h2 {
