@@ -23,13 +23,36 @@ assets/css/base.css
 
 
 /* ======================================================
-   1. Homepage Theme
+1. Homepage Hero
 ====================================================== */
 
-h1 {
-    color: #00FF9D;
+.hc-home-hero {
+    max-width: 960px;
+    margin-inline: auto;
+    padding: 4rem 1rem 3rem;
+    text-align: center;
 }
 
+.hc-home-hero h1 {
+    margin: 0 0 1rem;
+    color: #00FF9D;
+    font-size: clamp(2.3rem, 6vw, 4.5rem);
+    line-height: 1.05;
+}
+
+.hc-home-hero p {
+    max-width: 900px;
+    margin: 0.75rem auto;
+    color: #d7dbe4;
+    line-height: 1.7;
+}
+
+.hc-home-hero__actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
 
 /* ======================================================
    2. Welcome Section
