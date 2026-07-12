@@ -36,8 +36,10 @@ h1 {
 ====================================================== */
 
 .headshot {
+    display: block;
     width: 20%;
     height: auto;
+    margin-inline: auto;
     border-radius: 20%;
 }
 
