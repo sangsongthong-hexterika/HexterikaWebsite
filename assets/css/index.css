@@ -55,15 +55,46 @@ assets/css/base.css
 }
 
 /* ======================================================
-   2. Welcome Section
+2. About Section
 ====================================================== */
 
-.headshot {
+.hc-home-about {
+    max-width: 960px;
+    margin: 3rem auto;
+    padding: 2rem 1.5rem;
+    background: #11172a;
+    border: 1px solid #2a3658;
+    border-radius: 14px;
+}
+
+.hc-home-about__image {
     display: block;
-    width: 20%;
+    width: min(12rem, 45vw);
     height: auto;
-    margin-inline: auto;
+    margin: 0 auto 2rem;
     border-radius: 20%;
+}
+
+.hc-home-about__content {
+    max-width: 760px;
+    margin-inline: auto;
+}
+
+.hc-home-about h2 {
+    margin: 0 0 1rem;
+    color: #e6e9f0;
+    text-align: center;
+}
+
+.hc-home-about p {
+    margin: 0;
+    color: #a8afc0;
+    line-height: 1.7;
+    text-align: left;
+}
+
+.hc-home-about p + p {
+    margin-top: 1rem;
 }
 
 
