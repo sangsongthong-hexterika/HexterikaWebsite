@@ -80,31 +80,54 @@ the homepage redesign begins.
 
 
 /* ======================================================
-   4. Call-To-Action (CTA)
+4. Call-To-Action (CTA)
 ====================================================== */
+
+.hc-home-cta {
+    max-width: 960px;
+    margin: 3rem auto 4rem;
+    padding: 2rem 1.5rem;
+    background: #11172a;
+    border: 1px solid #2a3658;
+    border-radius: 14px;
+    text-align: center;
+}
+
+.hc-home-cta h2 {
+    margin: 0 0 0.75rem;
+    color: #e6e9f0;
+}
+
+.hc-home-cta p {
+    max-width: 700px;
+    margin: 0 auto;
+    color: #a8afc0;
+    line-height: 1.7;
+}
+
+.hc-home-cta__actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
 
 /*
 Do not redesign this component unless intentionally
 creating a new version.
-
 This is the canonical homepage CTA button.
 */
 
 .button-cta {
     display: inline-block;
-
     margin-top: 20px;
     margin-bottom: 20px;
-
     padding: 10px 20px;
-
     background-color: #00FF9D;
     border-radius: 5px;
-
     color: black;
     font-weight: bold;
     text-decoration: none;
-
     transition: background-color 0.3s ease;
 }
 
